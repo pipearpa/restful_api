@@ -21,9 +21,9 @@ app.use('/api/v1/users', require('./api/v1/routes/users.routes'));
 app.use('/api/v1/articles', require('./api/v1/routes/articles.routes'));
 app.use('/api/v1/categories', require('./api/v1/routes/categories.routes'));
 
-// app.get('/', (req, res) => {
-//     res.send({title: 'Hello adso!'})
-// })
+ app.get('/api/v1/test', (req, res) => {
+     res.send('Hello adso!')
+ })
 
 
 app.listen(app.get('port'), () => {
