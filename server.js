@@ -23,7 +23,7 @@ app.use('/api/v1/categories', require('./api/v1/routes/categories.routes'));
 
  app.get('/api/v1/test', (req, res) => {
      res.send('Hello adso!')
- })
+ });
 
 
 app.listen(app.get('port'), () => {
